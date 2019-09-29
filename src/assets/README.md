@@ -1,0 +1,2 @@
+/_ Your assets, which are dependencies shared by your application — such as SASS mixins, images, etc. — can go in the assets directory. This provides a single location for storing files that could be seen as external to the project itself. If your branding needs to change, the colors can all be adjusted in the centralized SASS directory, your banners can all be adjusted in the centralized images directory.
+_/
