@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Preview
 
 ![picture](public/images/stage.png)
@@ -8,9 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start:dev`
+### Run in Development Mode
 
-Runs the app in the development mode.
+`npm run start:dev`
 
 API_URL: [http://localhost:4001](http://localhost:4001)
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -19,20 +17,33 @@ The page will reload if you make edits.
 
 You will also see any lint errors in the console.
 
-### `npm start:staging`
+### Run Staging
 
-Runs the app in the development mode.
+`npm run start:staging`
 
-API_URL: [https://ozone-staging.herokuapp.com](https://ozone-staging.herokuapp.com)
-Open [http://localhost:3000](http://localhost:3002) to view it in the browser.
+API_URL: [http://localhost:4001](http://localhost:4001) - update this in `env-config.json`
+Open [http://localhost:3002](http://localhost:3002) to view it in the browser.
 
 The page will reload if you make edits.
 
 You will also see any lint errors in the console.
 
-### `npm start:prod`
+### Run in production
 
-Runs the app in the development mode.
+`npm run start:prod`
 
-API_URL: [https://ozone-production.herokuapp.com](https://ozone-production.herokuapp.com)
-Open [http://localhost:3000](http://localhost:3003) to view it in the browser.
+This runs `npm run build` for optimization and starts the app in the Production mode.
+
+API_URL: [http://localhost:4001](http://localhost:4001) - update this in `env-config.json`
+Open [http://localhost:3003](http://localhost:3003) to view it in the browser.
+
+### Run Tests
+
+Note that the development build is not optimized.
+Ensure the build works, run `npm run build`.
+
+`npm test` to run the tests.
+
+## About this scaffold
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+body {
+  background: #282c34;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+}
+.welcome {
+  font-size: 24px;
+  line-height: 5px;
+  padding: 50px 10px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 45px;
+  font-weight: 700;
+}
+.welcome a {
+  color: #fff;
+}
+.welcome pre {
+  color: #333;
+}
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  -webkit-animation: heartbeat 10s infinite;
+  animation: heartbeat 10s infinite;
+  margin: 0 auto;
+}
+#heart:after,
+#heart:before {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #eb3323;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  to {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+}
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  60% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+  to {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+}
+div.content {
+  display: inline-block;
+  float: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+pre {
+  background: #ccc;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 5px;
+  display: inline;
+}
+.footer {
+  background: #20232a;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  bottom: 0;
+  color: #aaa;
+  font-size: 12px;
+}
+.footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+/*# sourceMappingURL=main.2c8f365a.chunk.css.map */

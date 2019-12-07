@@ -22,7 +22,7 @@ server.use(cors());
 
 /* Response delay */
 const responseDelay = process.env.REACT_APP_RESPONSE_DELAY || 1000;
-const message = `Application running in port:  ${PORT} (${environment})`;
+const message = `API is running on port:  ${PORT} (${environment})`;
 
 /* Middlware for POST calls */
 server.use(jsonServer.bodyParser);

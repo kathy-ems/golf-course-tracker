@@ -41,12 +41,18 @@ switch (environment) {
     });
     break;
 
+  case "development":
+    app.all("/*", function(req, res) {
+      apiProxy.web(req, res, { target: API_URL });
+    });
+    break;
+
   default:
     break;
 }
 
 function startServer(app) {
-  const message = `Application running in port:  ${PORT} (${environment})`;
+  const message = `Application running on port:  ${PORT} (${environment})`;
 
   app.listen(PORT, () => {
     console.log(message);

@@ -5,8 +5,7 @@ import './other-component.scss';
 
 const environment = process.env.REACT_APP_ENVIRONMENT;
 const apiUrl = envConfig[environment]['api_url'];
-
-const OtherComponent = function() {
+const OtherComponent = () => {
   const [data, dataSet] = useState('Loading...');
 
   async function fetchMyAPI(url) {

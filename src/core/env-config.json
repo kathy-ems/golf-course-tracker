@@ -6,10 +6,12 @@
   },
   "staging": {
     "ui_port": 3002,
-    "api_url": "https://ozone-staging.herokuapp.com"
+    "api_port": 4001,
+    "api_url": "http://localhost:4001"
   },
   "production": {
     "ui_port": 3003,
-    "api_url": "https://ozone-production.herokuapp.com"
+    "api_port": 4001,
+    "api_url": "http://localhost:4001"
   }
 }

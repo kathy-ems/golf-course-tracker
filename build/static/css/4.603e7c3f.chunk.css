@@ -1,0 +1,12 @@
+.environment ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+.environment ul li span a {
+  color: #87ceeb;
+  text-decoration: none;
+}
+.environment ul li span a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=4.603e7c3f.chunk.css.map */

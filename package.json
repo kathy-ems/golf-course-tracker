@@ -55,8 +55,8 @@
     "start:stagingserver": "REACT_APP_ENVIRONMENT='staging' npm run start:server",
     "start:prodserver": "REACT_APP_ENVIRONMENT='production' npm run start:server",
     "start:dev": "concurrently -k \"npm run start:devserver\" \" npm run start\"",
-    "start:staging": "concurrently -k  \"npm run start:stagingserver\" \"REACT_APP_ENVIRONMENT='staging' PORT=3002 npm run react:start\"",
-    "start:prod": "REACT_APP_ENVIRONMENT='production' npm run build && npm run start:prodserver"
+    "start:staging": "concurrently -k  \"npm run start:devserver\" \"REACT_APP_ENVIRONMENT='staging' PORT=3002 npm run react:start\"",
+    "start:prod": "concurrently -k  \"npm run start:devserver\" \"REACT_APP_ENVIRONMENT='production' npm run build && npm run start:prodserver\""
   },
   "husky": {
     "hooks": {
